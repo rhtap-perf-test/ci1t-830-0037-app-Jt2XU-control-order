@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-bzla
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/stonesoup_perfscale/ci1t-830-0037-tenant/ci1t-830-0037-app/devfile-sample-bzla@sha256:a570e4943376b3ca347dcb03c309c29debc26aa01632ab134b29ccf5a1293757
+        name: my-nodejs
+        resources: {}
+status: {}
